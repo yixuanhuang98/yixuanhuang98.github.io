@@ -7,9 +7,16 @@
 
     <meta name="author" content="Yixuan Huang">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
+    <style>
+      .representative {
+        background-color: #e0ffe0;
+      }
+    </style>
+    
     <style>
       body {
         background-color: #f9f9f9;
@@ -127,7 +134,7 @@
       </tbody>
     </table>
 
-    <ul>
+    <ul style="margin-top: 30px;">
     My research goal is to ground logical goals and sensory information in robot skills. To achieve this, I study planning for robot manipulation with learned relational dynamics. Specifically, I focus on learning to predict <strong>relational dynamics</strong> from <strong>partial-view point clouds</strong>, which enables the robot to solve challenging real-world tasks including:
     </ul>
     <ul style="margin-top: 20px; margin-bottom: 20px;">
@@ -142,142 +149,200 @@
       <tbody>
       <tr>
         <td style="text-align: left; background-color: #eee">
-          <heading style="font-family: monospace; font-size: 22px; color: #444">Featured Publications</heading>
+          <heading style="font-family: monospace; font-size: 22px; color: #444">Publications</heading>
         </td>
       </tr>
       </tbody>
     </table>
 
+    <!-- Publications Section -->
+    <div class="container pt-3" id="Publications" style="margin-bottom: 30px;">
+      <div class="filter-options">
+          <a href="#" onclick="filterPubs('selected'); return false;" id="filter-selected" class="active-filter">Show Selected</a> /
+          <a href="#" onclick="filterPubs('date'); return false;" id="filter-date">Show By Date</a>
+      </div>
 
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-      <tr onmouseout="f2p_stop()" onmouseover="f2p_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <video width="140" src="images/bag.mp4" type="video/mp4" muted autoplay loop></video>
-          <video width="140" src="images/shelf.mp4" type="video/mp4" muted autoplay loop></video>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://sites.google.com/view/fail2progress">
-            <span class="papertitle">Fail2Progress: Learning from Real-World Robot Failures with Stein Variational Inference</span>
-          </a>
-          <br>
-          <br>
-          <strong>Yixuan Huang</strong>, <a href="https://novellaalvina.github.io/">Novella Alvina</a>, <a href="https://users.cs.utah.edu/~mohanraj/">Mohanraj Devendran Shanthi</a>, <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>.
-          <br>
-          <a href="https://www.corl.org/home">Conference on Robot Learning</a> (CoRL), 2025
-          <br>
-          <a href="https://sites.google.com/view/fail2progress">project page</a>
-          <p></p>
-        </td>
-      </tr>
-      
-      <tr onmouseout="p2p_stop()" onmouseover="p2p_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <video width="140" src="images/p2p_packing.mp4" type="video/mp4" muted autoplay loop></video>
-          <video width="140" src="images/p2p_apple.mp4" type="video/mp4" muted autoplay loop></video>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/pdf/2408.14769">
-            <span class="papertitle">Points2Plans: From Point Clouds to Long-Horizon Plans with Composable Relational Dynamics</span>
-          </a>
-          <br>
-          <br>
-          <strong>Yixuan Huang</strong>, <a href="https://www.chrisagia.com/">Christopher Agia</a>, <a href="https://jimmyyhwu.github.io/">Jimmy Wu</a>, <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>, <a href="https://web.stanford.edu/~bohg/">Jeannette Bohg</a>.
-          <br>
-          <a href="https://2025.ieee-icra.org/">IEEE International Conference on Robotics and Automation</a> (ICRA) 2025
-          <br>
-          <a href="https://sites.google.com/stanford.edu/points2plans">project page</a> / 
-          <a href="https://arxiv.org/pdf/2408.14769">arXiv</a> /
-          <a href="https://github.com/yixuanhuang98/Points2Plans">code</a>
-          <p></p>
-        </td>
-      </tr>
+      <div id="pubs">
 
-      <tr onmouseout="eRD_stop()" onmouseover="eRD_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <video width="140" src="images/erd_all.mp4" type="video/mp4" muted autoplay loop></video>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/pdf/2305.10857.pdf">
-            <span class="papertitle">Latent Space Planning for Multi-Object Manipulation with Environment-Aware Relational Classifiers</span>
-          </a>
-          <br>
-          <br>
-          <strong>Yixuan Huang</strong>, <a href="https://nicholscrawford.github.io/">Nichols Crawford Taylor</a>, <a href="https://adamconkey.github.io/">Adam Conkey</a>, <a href="http://weiyuliu.com/">Weiyu Liu</a>, <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>.
-          <br>
-          <a href="https://www.ieee-ras.org/publications/t-ro">IEEE Transactions on Robotics</a> (T-RO) 2024
-          <br>
-          <a href="https://sites.google.com/view/erelationaldynamics">project page</a> / 
-          <a href="https://arxiv.org/pdf/2305.10857.pdf">arXiv</a> / 
-          <a href="https://bitbucket.org/robot-learning/erdtransformer/src/main/">code</a>
-          <p></p>
-        </td>
-      </tr>
+        <!-- Fail2Progress -->
+        <div class="publication selected" data-date="2025" data-topic="planning">
+          <div class="row align-items-center gy-2">
+            <div class="col-sm-3">
+              <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+                <source src="images/bag.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="col-sm-9">
+              <b>
+                <a href="https://sites.google.com/view/fail2progress">Fail2Progress: Learning from Real-World Robot Failures with Stein Variational Inference</a>
+              </b>
+              <p>
+                <strong>Yixuan Huang</strong>,
+                <a href="https://novellaalvina.github.io/">Novella Alvina</a>,
+                <a href="https://users.cs.utah.edu/~mohanraj/">Mohanraj Devendran Shanthi</a>,
+                <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>
+                <br>
+                <em>Conference on Robot Learning (CoRL)</em>, 2025
+                <br>
+                <a href="https://sites.google.com/view/fail2progress">project page</a> /
+                <a href="https://arxiv.org/pdf/2509.01746">arXiv</a>
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <tr onmouseout="memory_stop()" onmouseover="memory_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <video width="140" src="images/memory_task_1.mp4" type="video/mp4" muted autoplay loop></video>
-          <video width="140" src="images/memory_task_2.mp4" type="video/mp4" muted autoplay loop></video>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/pdf/2309.15278.pdf">
-            <span class="papertitle">Out of Sight, Still in Mind: Reasoning and Planning about Unobserved Objects with Video Tracking Enabled Memory Models</span>
-          </a>
-          <br>
-          <br>
-          <strong>Yixuan Huang</strong>, <a href="https://jia2lin3yuan1.github.io/">Jialin Yuan</a>, <a href="https://scholar.google.com/citations?user=xARSfT4AAAAJ&hl=en">Chanho Kim</a>, <a href="https://pupulpradhan9.wixsite.com/home">Pupul Pradhan</a>, Bryan Chen, <a href="https://web.engr.oregonstate.edu/~lif/">Li Fuxin</a>, <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>.
-          <br>
-          <a href="https://2024.ieee-icra.org/index.html">IEEE International Conference on Robotics and Automation</a> (ICRA) 2024
-          <br>
-          <a href="https://sites.google.com/view/rdmemory">project page</a> / 
-          <a href="https://arxiv.org/pdf/2309.15278.pdf">arXiv</a>
-          <p></p>
-        </td>
-      </tr>
-      
-      <tr onmouseout="RD_stop()" onmouseover="RD_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <video width="140" src="images/rd_multi_step.mp4" type="video/mp4" muted autoplay loop></video>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/pdf/2209.11943.pdf">
-            <span class="papertitle">Planning for Multi-Object Manipulation with Graph Neural Network Relational Classifiers</span>
-          </a>
-          <br>
-          <br>
-          <strong>Yixuan Huang</strong>, <a href="https://adamconkey.github.io/">Adam Conkey</a>, <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>.
-          <br>
-          <a href="https://www.icra2023.org/programme/call-contributions">IEEE International Conference on Robotics and Automation</a> (ICRA) 2023 
-          <br>
-          <a href="https://sites.google.com/view/rdgnn">project page</a> / 
-          <a href="https://arxiv.org/pdf/2209.11943.pdf">arXiv</a> / 
-          <a href="https://bitbucket.org/robot-learning/rdgnn_icra_2023/src/master/">code</a>
-          <p></p>
-        </td>
-      </tr>
+        <!-- Points2Plans -->
+        <div class="publication selected" data-date="2025" data-topic="planning">
+          <div class="row align-items-center gy-2">
+            <div class="col-sm-3">
+              <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+                <source src="images/p2p_packing.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="col-sm-9">
+              <b>
+                <a href="https://arxiv.org/pdf/2408.14769">Points2Plans: From Point Clouds to Long-Horizon Plans with Composable Relational Dynamics</a>
+              </b>
+              <p>
+                <strong>Yixuan Huang</strong>,
+                <a href="https://www.chrisagia.com/">Christopher Agia</a>,
+                <a href="https://jimmyyhwu.github.io/">Jimmy Wu</a>,
+                <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>,
+                <a href="https://web.stanford.edu/~bohg/">Jeannette Bohg</a>
+                <br>
+                <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2025
+                <br>
+                <a href="https://sites.google.com/stanford.edu/points2plans">project page</a> /
+                <a href="https://arxiv.org/pdf/2408.14769">arXiv</a> /
+                <a href="https://github.com/yixuanhuang98/Points2Plans">code</a>
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <tr onmouseout="tendon_stop()" onmouseover="tendon_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <video width="140" src="images/tendon_video.mp4" type="video/mp4" muted autoplay loop></video>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/pdf/2110.07789.pdf">
-            <span class="papertitle">Toward Learning Context-Dependent Tasks from Demonstration for Tendon-Driven Surgical Robots</span>
-          </a>
-          <br>
-          <br>
-          <strong>Yixuan Huang</strong>, <a href="https://scholar.google.com/citations?user=MbeZEoMAAAAJ&hl=en">Michael Bentley</a>, <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>, <a href="https://users.cs.utah.edu/~adk/">Alan Kuntz</a>.
-          <br>
-          <a href="http://www.ismr.gatech.edu/">International Symposium on Medical Robotics</a> (ISMR) 2021
-          <br>
-          <strong>Best Paper Award Finalist, Best Student Paper Award Finalist</strong>
-          <br>
-          <a href="https://robot-learning.cs.utah.edu/project:lfd_tendon_robot">project page</a> / 
-          <a href="https://arxiv.org/pdf/2110.07789.pdf">arXiv</a>
-          <p></p>
-        </td>
-      </tr>
+        <!-- eRD -->
+        <div class="publication selected" data-date="2024" data-topic="planning">
+          <div class="row align-items-center gy-2">
+            <div class="col-sm-3">
+              <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+                <source src="images/erd_all.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="col-sm-9">
+              <b>
+                <a href="https://arxiv.org/pdf/2305.10857.pdf">Latent Space Planning for Multi-Object Manipulation with Environment-Aware Relational Classifiers</a>
+              </b>
+              <p>
+                <strong>Yixuan Huang</strong>,
+                <a href="https://nicholscrawford.github.io/">Nichols Crawford Taylor</a>,
+                <a href="https://adamconkey.github.io/">Adam Conkey</a>,
+                <a href="http://weiyuliu.com/">Weiyu Liu</a>,
+                <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>
+                <br>
+                <em>IEEE Transactions on Robotics (T-RO)</em>, 2024
+                <br>
+                <a href="https://sites.google.com/view/erelationaldynamics">project page</a> /
+                <a href="https://arxiv.org/pdf/2305.10857.pdf">arXiv</a> /
+                <a href="https://bitbucket.org/robot-learning/erdtransformer/src/main/">code</a>
+              </p>
+            </div>
+          </div>
+        </div>
 
-    </table>
+        <!-- Memory -->
+        <div class="publication selected" data-date="2024" data-topic="planning">
+          <div class="row align-items-center gy-2">
+            <div class="col-sm-3">
+              <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+                <source src="images/memory_task_1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="col-sm-9">
+              <b>
+                <a href="https://arxiv.org/pdf/2309.15278.pdf">Out of Sight, Still in Mind: Reasoning and Planning about Unobserved Objects with Video Tracking Enabled Memory Models</a>
+              </b>
+              <p>
+                <strong>Yixuan Huang</strong>,
+                <a href="https://jia2lin3yuan1.github.io/">Jialin Yuan</a>,
+                <a href="https://scholar.google.com/citations?user=xARSfT4AAAAJ&hl=en">Chanho Kim</a>,
+                <a href="https://pupulpradhan9.wixsite.com/home">Pupul Pradhan</a>,
+                Bryan Chen,
+                <a href="https://web.engr.oregonstate.edu/~lif/">Li Fuxin</a>,
+                <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>
+                <br>
+                <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2024
+                <br>
+                <a href="https://sites.google.com/view/rdmemory">project page</a> /
+                <a href="https://arxiv.org/pdf/2309.15278.pdf">arXiv</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RD -->
+        <div class="publication selected" data-date="2023" data-topic="planning">
+          <div class="row align-items-center gy-2">
+            <div class="col-sm-3">
+              <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+                <source src="images/rd_multi_step.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="col-sm-9">
+              <b>
+                <a href="https://arxiv.org/pdf/2209.11943.pdf">Planning for Multi-Object Manipulation with Graph Neural Network Relational Classifiers</a>
+              </b>
+              <p>
+                <strong>Yixuan Huang</strong>,
+                <a href="https://adamconkey.github.io/">Adam Conkey</a>,
+                <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>
+                <br>
+                <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2023
+                <br>
+                <a href="https://sites.google.com/view/rdgnn">project page</a> /
+                <a href="https://arxiv.org/pdf/2209.11943.pdf">arXiv</a> /
+                <a href="https://bitbucket.org/robot-learning/rdgnn_icra_2023/src/master/">code</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tendon -->
+        <div class="publication" data-date="2021" data-topic="planning">
+          <div class="row align-items-center gy-2">
+            <div class="col-sm-3">
+              <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+                <source src="images/tendon_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="col-sm-9">
+              <b>
+                <a href="https://arxiv.org/pdf/2110.07789.pdf">Toward Learning Context-Dependent Tasks from Demonstration for Tendon-Driven Surgical Robots</a>
+              </b>
+              <p>
+                <strong>Yixuan Huang</strong>,
+                <a href="https://scholar.google.com/citations?user=MbeZEoMAAAAJ&hl=en">Michael Bentley</a>,
+                <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>,
+                <a href="https://users.cs.utah.edu/~adk/">Alan Kuntz</a>
+                <br>
+                <em>International Symposium on Medical Robotics (ISMR)</em>, 2021
+                <br>
+                <strong>Best Paper Award Finalist, Best Student Paper Award Finalist</strong>
+                <br>
+                <a href="https://robot-learning.cs.utah.edu/project:lfd_tendon_robot">project page</a> /
+                <a href="https://arxiv.org/pdf/2110.07789.pdf">arXiv</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
     <button class="accordion">All Publications</button>
     <div class="panel">
@@ -618,5 +683,254 @@
       }
     </script>
 
+    <script>
+      // ===== Publication filtering functions =====
+      function filterPubs(category) {
+        const publications = document.querySelectorAll('.publication');
+        const pubContainer = document.getElementById('pubs');
+        
+        // Update active filter styling
+        document.getElementById('filter-selected').classList.remove('active-filter');
+        document.getElementById('filter-date').classList.remove('active-filter');
+        document.getElementById(`filter-${category}`).classList.add('active-filter');
+        
+        // Store original publications if not already stored
+        if (!window.originalPublications) {
+          window.originalPublications = Array.from(publications);
+        }
+
+        if (category === 'date') {
+          pubContainer.innerHTML = '';
+          const years = {};
+          const before2018 = [];
+          
+          // Group publications by year
+          window.originalPublications.forEach(pub => {
+            const year = pub.getAttribute('data-date');
+            if (parseInt(year) <= 2018) {
+              before2018.push(pub.cloneNode(true));
+            } else {
+              if (!years[year]) years[year] = [];
+              years[year].push(pub.cloneNode(true));
+            }
+          });
+          
+          // Sort years in descending order, but excluding before2019
+          const sortedYears = Object.keys(years).sort((a, b) => b - a);
+          
+          // Create year groups
+          sortedYears.forEach(year => {
+            const yearGroup = document.createElement('div');
+            yearGroup.classList.add('year-group');
+            yearGroup.id = `year-${year}`;
+            yearGroup.innerHTML = `<b>${year}</b><hr>`;
+            pubContainer.appendChild(yearGroup);
+            
+            years[year].forEach(pub => {
+              pub.style.display = 'block';
+              pubContainer.appendChild(pub);
+            });
+          });
+          
+          // Add "Before 2019" group if there are any papers
+          if (before2018.length > 0) {
+            const beforeGroup = document.createElement('div');
+            beforeGroup.classList.add('year-group');
+            beforeGroup.id = 'year-before2018';
+            beforeGroup.innerHTML = `<b>Before 2018</b><hr>`;
+            pubContainer.appendChild(beforeGroup);
+            
+            before2018.sort((a, b) => b.getAttribute('data-date') - a.getAttribute('data-date'));
+            before2018.forEach(pub => {
+              pub.style.display = 'block';
+              pubContainer.appendChild(pub);
+            });
+          }
+          
+          // Setup BibTeX links again after DOM changes
+          setupBibTexLinks();
+          return;
+        }
+
+        // 'selected' or any other default
+        pubContainer.innerHTML = '';
+        
+        // Add Selected heading with horizontal rule for selected view
+        if (category === 'selected') {
+          const selectedGroup = document.createElement('div');
+          selectedGroup.classList.add('selected-group');
+          selectedGroup.innerHTML = `<b>Selected</b><hr>`;
+          pubContainer.appendChild(selectedGroup);
+        }
+        
+        window.originalPublications.forEach(pub => {
+          const pubClone = pub.cloneNode(true);
+          if (pub.classList.contains(category)) {
+            pubClone.style.display = 'block';
+          } else {
+            pubClone.style.display = 'none';
+          }
+          pubContainer.appendChild(pubClone);
+        });
+        
+        // Setup BibTeX links again after DOM changes
+        setupBibTexLinks();
+      }
+
+      // ===== Initialize on load =====
+      document.addEventListener('DOMContentLoaded', () => {
+        filterPubs('date');
+        
+        // News section toggle button text change
+        const newsCollapse = document.getElementById('collapseNews');
+        const newsToggle = document.getElementById('newsToggle');
+        
+        newsCollapse.addEventListener('show.bs.collapse', function () {
+          newsToggle.innerHTML = 'Click here to read less <i class="fas fa-chevron-up fa-xs"></i>';
+        });
+        
+        newsCollapse.addEventListener('hide.bs.collapse', function () {
+          newsToggle.innerHTML = 'Click here to read more <i class="fas fa-chevron-down fa-xs"></i>';
+        });
+        
+        // Recruitment section toggle button text change
+        const recruitmentCollapse = document.getElementById('collapseRecruitment');
+        const recruitmentToggle = document.getElementById('recruitmentToggle');
+        
+        recruitmentCollapse.addEventListener('show.bs.collapse', function () {
+          recruitmentToggle.innerHTML = 'Click here to read less <i class="fas fa-chevron-up fa-xs"></i>';
+        });
+        
+        recruitmentCollapse.addEventListener('hide.bs.collapse', function () {
+          recruitmentToggle.innerHTML = 'Click here to read more <i class="fas fa-chevron-down fa-xs"></i>';
+        });
+        
+        // Setup BibTeX links
+        setupBibTexLinks();
+        
+        // Close navbar when clicking a nav link in mobile view
+        const navLinks = document.querySelectorAll('.navbar-nav a');
+        const navbarCollapse = document.getElementById('navbarNav');
+        const bsNavbarCollapse = new bootstrap.Collapse(navbarCollapse, {toggle: false});
+        
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            if (window.innerWidth < 576) { // sm breakpoint in Bootstrap is 576px
+              bsNavbarCollapse.hide();
+            }
+          });
+        });
+      });
+      
+      // ===== BibTeX handling =====
+      function setupBibTexLinks() {
+        // Find all bibtex links
+        document.querySelectorAll('a[href^="data/"][href$=".bib"]').forEach(link => {
+          const bibPath = link.getAttribute('href');
+          const pubContainer = link.closest('.publication');
+          const collapseId = 'collapse-' + bibPath.replace(/[\/\.]/g, '-');
+          const toggleId = 'toggle-' + bibPath.replace(/[\/\.]/g, '-');
+          
+          // Create collapse container if it doesn't exist
+          if (!document.getElementById(collapseId)) {
+            // Replace the link with a toggle and add a collapse div
+            const colDiv = document.createElement('div');
+            colDiv.classList.add('collapse');
+            colDiv.id = collapseId;
+            colDiv.innerHTML = '<div class="bibtex-content">Loading...</div>';
+            
+            // Insert the collapse div after the paragraph containing the link
+            const paragraph = link.closest('p');
+            paragraph.parentNode.insertBefore(colDiv, paragraph.nextSibling);
+            
+            // Change the link to a toggle button
+            link.setAttribute('data-bs-toggle', 'collapse');
+            link.setAttribute('href', '#' + collapseId);
+            link.setAttribute('role', 'button');
+            link.setAttribute('aria-expanded', 'false');
+            link.setAttribute('aria-controls', collapseId);
+            link.id = toggleId;
+            
+            // Add collapse event listeners
+            const collapse = new bootstrap.Collapse(colDiv, { toggle: false });
+            
+            colDiv.addEventListener('show.bs.collapse', function() {
+              // Load BibTeX content when expanding
+              fetch(bibPath)
+                .then(response => response.text())
+                .then(data => {
+                  // Escape HTML entities to display BibTeX properly
+                  const escaped = data
+                    .replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;')
+                    .replace(/"/g, '&quot;')
+                    .replace(/'/g, '&#039;');
+                  colDiv.querySelector('.bibtex-content').innerHTML = escaped;
+                })
+                .catch(error => {
+                  colDiv.querySelector('.bibtex-content').textContent = 'Error loading BibTeX: ' + error;
+                });
+              
+              // Change link text
+              link.innerHTML = 'hide bibtex';
+            });
+            
+            colDiv.addEventListener('hide.bs.collapse', function() {
+              // Change link text back
+              link.innerHTML = 'bibtex';
+            });
+          }
+        });
+      }
+
+      // ===== Smooth scrolling for navbar links =====
+      document.querySelectorAll('.navbar-nav a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const navHeight = document.querySelector('.navbar').offsetHeight;
+          
+          // Handle collapsing navbar in mobile view
+          if (window.innerWidth < 576) {
+            const navbarCollapse = document.getElementById('navbarNav');
+            const bsNavbarCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse, {toggle: false});
+            
+            // Collapse navbar then scroll after a slight delay
+            bsNavbarCollapse.hide();
+            
+            // Wait for navbar collapse animation to complete before scrolling
+            setTimeout(() => {
+              if (targetId === '#Home') {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              } else {
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                  const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                  window.scrollTo({
+                    top: elementPosition - navHeight + 240,
+                    behavior: 'smooth'
+                  });
+                }
+              }
+            }, 0); // Bootstrap collapse transition is typically 300ms
+          } else {
+            // Default behavior for larger screens
+            if (targetId === '#Home') {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else {
+              const targetElement = document.querySelector(targetId);
+              if (targetElement) {
+                const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                window.scrollTo({
+                  top: elementPosition - navHeight,
+                  behavior: 'smooth'
+                });
+              }
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>
