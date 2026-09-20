@@ -15,6 +15,12 @@
       .representative {
         background-color: #e0ffe0;
       }
+
+      .dag {
+        font-size: 0.7em;
+        vertical-align: super;
+        line-height: 0;
+      }
     </style>
     
     <style>
@@ -104,7 +110,7 @@
                   Here is my <a href="data/Research_Statement_Yixuan_Huang_2026.pdf">Research Statement</a>. 
                 </p>
                 <p style="text-align:center">
-                  yh1542[at]princeton.edu &nbsp/&nbsp; 
+                  yixuan.huang[at]princeton.edu &nbsp/&nbsp; 
                   <a href="data/Yixuan_Huang_CV.pdf">CV</a> &nbsp;/&nbsp;
                   <a href="https://github.com/yixuanhuang98">Github</a> &nbsp;/&nbsp;
                   <a href="https://www.linkedin.com/in/yixuan-huang-38b73617b/">Linkedin</a> &nbsp;/&nbsp;
@@ -162,8 +168,10 @@
         <td style="padding:20px;width:100%;vertical-align:middle">
           <div style="max-height: 250px; overflow-y: scroll; padding-right: 10px; padding: 15px;"
             <ul>
+              <li style="margin-bottom: 10px;"><strong><em>[Sep 2026]</em></strong> -- Submitted 6 new papers. Stay tuned for the public releases.</li>
+              <li style="margin-bottom: 10px;"><strong><em>[Jul 2026]</em></strong> -- Released our <a href="https://prpl-group.com/tamp-learning-survey.pdf">survey on learning by and for task and motion planning</a>.</li>
               <li style="margin-bottom: 10px;"><strong><em>[May 2026]</em></strong> -- Our work on <a href="https://icra2026-dloroute.github.io/DLORoute/">hierarchical deformable objects routing</a> was selected as the finalists for <strong>Best Paper Award on Robot Learning</strong> at <a href="https://2026.ieee-icra.org/">ICRA 2026</a>!</li>
-              <li style="margin-bottom: 10px;"><strong><em>[Apr 2026]</em></strong> -- Three papers (<a href="https://prpl-group.com/kinder-site/">KinDER</a>, <a href="https://yixuanhuang98.github.io/">RoboVista</a>, <a href="https://lap-vla.github.io/">LAP</a>) accepted to <a href="https://roboticsconference.org/">RSS 2026</a>!</li>
+              <li style="margin-bottom: 10px;"><strong><em>[Apr 2026]</em></strong> -- Three papers (<a href="https://prpl-group.com/kinder-site/">KinDER</a>, <a href="https://berkeleyautomation.github.io/robovista/">RoboVista</a>, <a href="https://lap-vla.github.io/">LAP</a>) accepted to <a href="https://roboticsconference.org/">RSS 2026</a>!</li>
               <li style="margin-bottom: 10px;"><strong><em>[Apr 2026]</em></strong> -- Selected as a <strong>Rising Star</strong> at the Princeton Robotics Inaugural Symposium! </li>
               <li style="margin-bottom: 10px;"><strong><em>[Aug 2025]</em></strong> -- Our work on <a href="https://sites.google.com/view/fail2progress">learning from robot failures</a> accepted to <a href="https://www.corl.org/">CoRL 2025</a>!</li>
               <li style="margin-bottom: 10px;"><strong><em>[Jun 2025]</em></strong> -- Started my Postdoctoral position at Princeton University!</li>
@@ -192,12 +200,197 @@
 
     <!-- Publications Section -->
     <div class="container pt-3" id="Publications" style="margin-bottom: 30px;">
+      <p style="margin-top: 15px; margin-bottom: 20px; font-size: small; color: #555;">
+        *Equal contribution. <span class="dag">&dagger;</span>Student mentored by me.
+      </p>
       <!-- <div class="filter-options">
           <a href="#" onclick="filterPubs('selected'); return false;" id="filter-selected" class="active-filter">Show Selected</a> /
           <a href="#" onclick="filterPubs('date'); return false;" id="filter-date">Show By Date</a>
       </div> -->
 
       <div id="pubs">
+
+        <!-- TAMP Learning Survey -->
+        <div class="publication selected" data-date="2026" data-topic="planning">
+          <div class="row align-items-center gy-2">
+            <div class="col-sm-3">
+              <img src="images/tamp_survey.png" alt="TAMP learning survey figure" class="img-fluid rounded border" style="width: 100%; display: block; height: auto;">
+            </div>
+            <div class="col-sm-9">
+              <b>
+                <a href="https://prpl-group.com/tamp-learning-survey.pdf">Learning By and For Task and Motion Planning: A Survey</a>
+              </b>
+              <p>
+                <strong>Yixuan Huang*</strong>,
+                <a href="https://benned-h.github.io/">Benned Hedegaard*</a>,
+                <a href="https://www.namanshah.net/">Naman Shah</a>,
+                <a href="http://siddharthsrivastava.net/">Siddharth Srivastava</a>,
+                <a href="https://cs.brown.edu/people/gdk/">George Konidaris</a>,
+                <a href="https://tomsilver.github.io/">Tom Silver</a>
+                <br>
+                <em>In Submission</em>, 2026
+                <br>
+                <a href="https://prpl-group.com/tamp-learning-survey.pdf">paper</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- TANDEM -->
+        <div class="publication" data-date="2026" data-topic="planning">
+          <div class="row align-items-center gy-2">
+            <div class="col-sm-3">
+              <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+                <source src="images/tandem.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="col-sm-9">
+              <b>
+                <a href="https://tandem-website.github.io/">TANDEM: Task and Motion Planning with As-Needed Demonstrations for Efficient Vision-Language-Action Model Fine-tuning</a>
+              </b>
+              <p>
+                <a href="https://samratsahoo.com/">Samrat Sahoo*<span class="dag">&dagger;</span></a>,
+                <a href="https://scholar.google.com/citations?user=tQgBnRsAAAAJ&hl=en">Liang Ji*<span class="dag">&dagger;</span></a>,
+                <a href="https://tomsilver.github.io/">Tom Silver</a>,
+                <strong>Yixuan Huang</strong>
+                <br>
+                <em>In Submission</em>, 2026
+                <br>
+                <a href="https://tandem-website.github.io/">project page</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- DATAFARM -->
+        <div class="publication" data-date="2026" data-topic="planning">
+          <div class="row align-items-center gy-2">
+            <div class="col-sm-3">
+              <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+                <source src="images/datafarm.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="col-sm-9">
+              <b>
+                <a href="https://datafarm-website.github.io/">DATAFARM: Distribution-Aligned Task and Motion Planning for Fine-Tuning Vision-Language-Action Models</a>
+              </b>
+              <p>
+                <a href="https://samratsahoo.com/">Samrat Sahoo<span class="dag">&dagger;</span></a>,
+                <strong>Yixuan Huang</strong>,
+                <a href="https://tomsilver.github.io/">Tom Silver</a>
+                <br>
+                <em>In Submission</em>, 2026
+                <br>
+                <a href="https://datafarm-website.github.io/">project page</a> /
+                <a href="https://arxiv.org/abs/2609.12316">arXiv</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CMPM -->
+        <div class="publication" data-date="2026" data-topic="planning">
+          <div class="row align-items-center gy-2">
+            <div class="col-sm-3">
+              <img src="images/cmpm.png" alt="Chaining visuomotor skills figure" class="img-fluid rounded border" style="width: 100%; display: block; height: auto;">
+            </div>
+            <div class="col-sm-9">
+              <b>
+                <a href="https://cmpm-robot.github.io/">Chaining Visuomotor Skills for Constrained Manipulation Through Perceptual Manipulation</a>
+              </b>
+              <p>
+                <a href="https://scholar.google.com/citations?user=W5WYNgkAAAAJ&hl=en">Hao Wang<span class="dag">&dagger;</span></a>,
+                <strong>Yixuan Huang</strong>,
+                <a href="https://smlbansal.github.io/">Somil Bansal</a>,
+                <a href="https://tomsilver.github.io/">Tom Silver</a>
+                <br>
+                <em>In Submission</em>, 2026
+                <br>
+                <a href="https://cmpm-robot.github.io/">project page</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SPECTRE -->
+        <div class="publication" data-date="2026" data-topic="planning">
+          <div class="row align-items-center gy-2">
+            <div class="col-sm-3">
+              <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+                <source src="images/spectre.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="col-sm-9">
+              <b>
+                <a href="https://spectre-submission.github.io/">SPECTRE: Skeleton Priority Estimation Conditioned on TAMP Refinement Evidence</a>
+              </b>
+              <p>
+                Jiacheng Xu<span class="dag">&dagger;</span>,
+                <strong>Yixuan Huang</strong>,
+                <a href="https://tomsilver.github.io/">Tom Silver</a>
+                <br>
+                <em>In Submission</em>, 2026
+                <br>
+                <a href="https://spectre-submission.github.io/">project page</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coding Agents for GenTAMP -->
+        <div class="publication" data-date="2026" data-topic="planning">
+          <div class="row align-items-center gy-2">
+            <div class="col-sm-3">
+              <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+                <source src="images/coding_agents_tamp.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="col-sm-9">
+              <b>
+                <a href="https://agenticgentamp.github.io/">Coding Agents for Generalized Task and Motion Planning Problems</a>
+              </b>
+              <p>
+                Matteo Merler,
+                <a href="https://jaraxxus-me.github.io/">Bowen Li</a>,
+                Josh Roy,
+                <a href="https://yichao-liang.github.io/">Yichao Liang</a>,
+                Qianwei Wang,
+                <strong>Yixuan Huang</strong>,
+                <a href="https://tomsilver.github.io/">Tom Silver</a>
+                <br>
+                <em>In Submission</em>, 2026
+                <br>
+                <a href="https://agenticgentamp.github.io/">project page</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skeleton-Conditioned Base Placement -->
+        <div class="publication" data-date="2026" data-topic="planning">
+          <div class="row align-items-center gy-2">
+            <div class="col-sm-3">
+              <img src="images/base_selection.png" alt="Skeleton-conditioned base placement figure" class="img-fluid rounded border" style="width: 100%; display: block; height: auto;">
+            </div>
+            <div class="col-sm-9">
+              <b>
+                Skeleton-Conditioned Base Placement Evaluation for Long-Horizon Mobile Manipulation
+              </b>
+              <p>
+                Qihang Li<span class="dag">&dagger;</span>,
+                <strong>Yixuan Huang</strong>,
+                <a href="https://tomsilver.github.io/">Tom Silver</a>,
+                <a href="http://www.pengg-robotics.com/">Peng Gao</a>
+                <br>
+                <em>In Submission</em>, 2026
+              </p>
+            </div>
+          </div>
+        </div>
 
         <!-- Kinder -->
         <div class="publication selected" data-date="2026" data-topic="planning">
@@ -218,11 +411,11 @@
                 <a href="https://sites.google.com/view/vaibhavsaxena">Vaibhav Saxena*</a>,
                 <a href="https://yichao-liang.github.io/">Yichao Liang</a>,
                 <a href="https://umishra.me/">Utkarsh Aashu Mishra</a>,
-                <a href="https://scholar.google.com/citations?user=tQgBnRsAAAAJ&hl=en">Liang Ji</a>,
+                <a href="https://scholar.google.com/citations?user=tQgBnRsAAAAJ&hl=en">Liang Ji<span class="dag">&dagger;</span></a>,
                 <a href="https://lihzha.github.io/">Lihan Zha</a>,
                 <a href="https://jimmyyhwu.github.io/">Jimmy Wu</a>,
                 <a href="https://nishanthjkumar.com/">Nishanth Kumar</a>,
-                <a href="https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/">Sebastian Schere</a>,
+                <a href="https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/">Sebastian Scherer</a>,
                 <a href="https://faculty.cc.gatech.edu/~danfei/">Danfei Xu</a>,
                 <a href="https://tomsilver.github.io/">Tom Silver</a>
                 <br>
@@ -244,11 +437,11 @@
             </div>
             <div class="col-sm-9">
               <b>
-                <a href="https://yixuanhuang98.github.io/">RoboVista: Evaluating Vision Language Models for Diverse Robot Applications</a>
+                <a href="https://berkeleyautomation.github.io/robovista/">RoboVista: Evaluating Vision Language Models for Diverse Robot Applications</a>
               </b>
               <p>
-                <a href="https://ehehee.github.io/">Shuangyu Xie</a>,
-                <a href="https://keplerc.github.io/">Kaiyuan Chen</a>,
+                <a href="https://ehehee.github.io/">Shuangyu Xie*</a>,
+                <a href="https://keplerc.github.io/">Kaiyuan Chen*</a>,
                 <a href="https://www.researchgate.net/scientific-contributions/Ziyang-Chen-2329162966">Ziyang Chen</a>,
                 <a href="https://scholar.google.com/citations?user=rbTsDkAAAAAJ&hl=en">Simeon Adebola</a>,
                 <strong>Yixuan Huang</strong>,
@@ -261,8 +454,8 @@
                 <br>
                 <em> Robotics: Science and Systems (RSS)</em>, 2026
                 <br>
-                project page (coming soon) /
-                arXiv (coming soon)
+                <a href="https://berkeleyautomation.github.io/robovista/">project page</a> /
+                <a href="https://arxiv.org/abs/2607.04610">arXiv</a>
               </p>
             </div>
           </div>
@@ -347,7 +540,7 @@
               </b>
               <p>
                 <strong>Yixuan Huang</strong>,
-                <a href="https://novellaalvina.github.io/">Novella Alvina</a>,
+                <a href="https://novellaalvina.github.io/">Novella Alvina<span class="dag">&dagger;</span></a>,
                 <a href="https://users.cs.utah.edu/~mohanraj/">Mohanraj Devendran Shanthi</a>,
                 <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>
                 <br>
@@ -405,7 +598,7 @@
               </b>
               <p>
                 <strong>Yixuan Huang</strong>,
-                <a href="https://nicholscrawford.github.io/">Nichols Crawford Taylor</a>,
+                <a href="https://nicholscrawford.github.io/">Nichols Crawford Taylor<span class="dag">&dagger;</span></a>,
                 <a href="https://adamconkey.github.io/">Adam Conkey</a>,
                 <a href="http://weiyuliu.com/">Weiyu Liu</a>,
                 <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>
@@ -437,7 +630,7 @@
                 <strong>Yixuan Huang</strong>,
                 <a href="https://jia2lin3yuan1.github.io/">Jialin Yuan</a>,
                 <a href="https://scholar.google.com/citations?user=xARSfT4AAAAJ&hl=en">Chanho Kim</a>,
-                <a href="https://pupulpradhan9.wixsite.com/home">Pupul Pradhan</a>,
+                <a href="https://pupulpradhan9.wixsite.com/home">Pupul Pradhan<span class="dag">&dagger;</span></a>,
                 Bryan Chen,
                 <a href="https://web.engr.oregonstate.edu/~lif/">Li Fuxin</a>,
                 <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>
@@ -589,7 +782,7 @@
     <p></p>
 
     <ul>
-      <li>Reviewing: 
+      <li>Reviewing:
         <ul class="child-list">  
           <li>
             <a href="https://2024.ieee-icra.org/" target="_blank">International Conference on Robotics and Automation (ICRA)</a> (2023 - Present)
@@ -610,6 +803,9 @@
             <a href="https://ieeexplore.ieee.org/document/6894708" target="_blank">IEEE Transactions on Robotics (T-RO)</a> (2025 - Present)
           </li>
           <li>
+            <a href="https://www.ieee-ras.org/publications/t-rl" target="_blank">IEEE Transactions on Robot Learning (T-RL)</a> (2026 - Present)
+          </li>
+          <li>
             <a href="https://journals.sagepub.com/home/IJR" target="_blank">The International Journal of Robotics Research (IJRR)</a> (2026 - Present)
           </li>
           <li>
@@ -625,14 +821,45 @@
             <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19" target="_blank">IEEE Transactions on Instrumentation and Measurement (TIM)</a> (2024)
           </li>
           <li>
-            <a href="https://leap-workshop.github.io/" target="_blank">Workshop on Learning Effective Abstractions for Planning (LEAP @ CoRL)</a> (2024, 2025)
+            <a href="https://www.ieee-ies.org/pubs/transactions-on-industrial-electronics" target="_blank">IEEE Transactions on Industrial Electronics (TIE)</a> (2024)
+          </li>
+          <li>
+            <a href="https://leap-workshop.github.io/" target="_blank">Workshop on Learning Effective Abstractions for Planning (LEAP @ CoRL)</a> (2024 - Present)
+          </li>
+          <li>
+            RSS Workshop on Out-of-Distribution Generalization in Robotics: Towards Reliable Learning-Based Autonomy (2025)
           </li>
         </ul>
-        </li> 
+        </li>
+      <li>Workshop organization:
+        <ul class="child-list">
+          <li>
+            Co-organizer, <a href="https://leap-workshop.github.io/" target="_blank">Learning Effective Abstractions for Planning (LEAP)</a> @ CoRL 2026, Austin, TX
+          </li>
+        </ul>
+        </li>
+      <li>Outreach:
+        <ul class="child-list">
+          <li>Summer 2022: Robotics lab tour co-organizer, <a href="https://l2trec.utah.edu/bridge-program/" target="_blank">University of Utah Bridge Program</a></li>
+          <li>Summer 2023: Robotics lab tour co-organizer, <a href="https://l2trec.utah.edu/bridge-program/" target="_blank">University of Utah Bridge Program</a></li>
+          <li>2025: Introduction to mobile manipulators, <a href="https://www.aiatprinceton.com/" target="_blank">Undergraduate AI Club at Princeton</a></li>
+          <li>2026: Introduction to robot programming for 7th-10th-grade students</li>
+        </ul>
+        </li>
+    </ul>
+    </div>
+    <p></p>
+
+    <button class="accordion">Teaching</button>
+    <div class="panel">
+    <p></p>
+
+    <ul>
+      <li> Oct 2025: Guest lecture on learning models for robot planning, ECE 531/COS 531: Robot Planning Meets Machine Learning, Princeton University</li>
+      <li> Nov 2024: Guest lecture on reinforcement learning, CS 6300: Artificial Intelligence, University of Utah</li>
+      <li> April 2022: Guest lecture on imitation learning, <a href="https://class-schedule.app.utah.edu/asia/1228/description.html?subj=CS&catno=4300&section=001" target="_blank">CS 4300: Artificial Intelligence</a> University of Utah</li>
       <li> Fall 2022: Teaching Assistant <a href="https://class-schedule.app.utah.edu/asia/1228/description.html?subj=CS&catno=4300&section=001" target="_blank">CS 4300: Artificial Intelligence</a> University of Utah</li>
       <li> Spring 2022: Teaching Assistant <a href="https://class-schedule.app.utah.edu/asia/1228/description.html?subj=CS&catno=4300&section=001" target="_blank">CS 4300: Artificial Intelligence</a> University of Utah</li>
-      <li> Summer 2022: Robotics lab tour co-organizer, <a href="https://l2trec.utah.edu/bridge-program/" target="_blank">University of Utah Bridge Program</a></li>
-      <li> Summer 2023: Robotics lab tour co-organizer, <a href="https://l2trec.utah.edu/bridge-program/" target="_blank">University of Utah Bridge Program</a></li>
     </ul>
     </div>
     <p></p>
@@ -643,8 +870,12 @@
 
     <ul>
       <li>International Conference on Robotics and Automation Best Paper Award on Robot Learning Finalist (2026)</li>
+      <li>Rising Star at the Princeton Robotics Inaugural Symposium (2026)</li>
+      <li>International Conference on Robotics and Automation Doctoral Consortium (2025)</li>
       <li>International Symposium on Medical Robotics Best Paper Award Finalist (2021)</li>
       <li>International Symposium on Medical Robotics Best Student Paper Award Finalist (2021)</li>
+      <li>International Symposium on Medical Robotics NSF Travel Award (2021)</li>
+      <li>University of Utah School of Computing Department Fellowship (2020)</li>
       <li>National Scholarship by Ministry of Education of China (2017)</li>
       <li>National Scholarship by Ministry of Education of China (2018)</li>
     </ul>
