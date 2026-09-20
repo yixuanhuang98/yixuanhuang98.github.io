@@ -1,89 +1,80 @@
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* Custom styles moved from HTML */
-
-/* Single shared column width for every section of the page. */
+/* ===== Theme =====
+   Two accent colours carry the whole page: blue marks anything the reader can
+   act on or should notice, orange is reserved for underlines. */
 :root {
-  --page-width: 1000px;
+  --blue: #0077B6;
+  --orange: #E64500;
+  /* Award highlights, matching the reference site's red. */
+  --red: #E64C3C;
+  --ink: #333333;
+  /* Heading slate, matching the reference site's h1-h6. */
+  --heading: #2C3E50;
+  --ink-soft: #666666;
+  --rule: #DDDDDD;
+  --page-width: 1080px;
+  --body-font: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --display-font: 'Roboto Condensed', 'Roboto', Montserrat, sans-serif;
 }
 
+body {
+  -webkit-font-smoothing: antialiased;
+  color: var(--ink);
+  font-family: var(--body-font);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a,
+li,
+strong {
+  font-family: var(--body-font);
+  font-size: 16px;
+}
+
+strong,
+b {
+  font-weight: 500;
+}
+
+/* Links: blue text, with the orange underline reserved for hover. */
+a {
+  color: var(--blue);
+  text-decoration: none;
+  border-bottom: dotted 1px transparent;
+  transition: border-bottom-color 0.2s ease-in-out;
+}
+
+a:focus,
+a:hover {
+  color: var(--blue);
+  text-decoration: none;
+  border-bottom-color: var(--orange);
+}
+
+/* Links that wrap an image or a heading carry no underline of their own. */
+a.plain,
+a:has(> img) {
+  border-bottom: none;
+}
+
+/* ===== Page column ===== */
 .container {
   max-width: var(--page-width);
 }
 
-.page-block,
-.section-bar {
+.page-block {
   width: 100%;
   max-width: var(--page-width);
   margin-right: auto;
   margin-left: auto;
-}
-
-.section-bar {
-  border: 0;
-  border-collapse: separate;
 }
 
 .section-text,
@@ -91,34 +82,184 @@
   max-width: var(--page-width);
   margin-right: auto;
   margin-left: auto;
-  padding-right: 20px;
+  padding-right: 0;
 }
 
 .section-text {
-  padding-left: 20px;
+  padding-left: 0;
 }
 
 .section-list {
-  padding-left: 45px;
+  padding-left: 1.4em;
+}
+
+/* ===== Section titles =====
+   Same face and colour as body copy, separated only by a light grey rule. */
+.section-title,
+button.accordion {
+  display: block;
+  width: 100%;
+  max-width: var(--page-width);
+  margin: 40px auto 16px auto;
+  padding: 0 0 4px 0;
+  border: none;
+  border-bottom: 2px solid var(--rule);
+  background: none;
+  color: var(--heading);
+  font-family: var(--body-font);
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: left;
+}
+
+button.accordion {
+  cursor: pointer;
+  position: relative;
+  transition: border-bottom-color 0.2s ease;
+}
+
+button.accordion:hover,
+button.accordion.active {
+  background: none;
+  border-bottom-color: var(--orange);
+}
+
+/* Chevron marking a section that opens. */
+button.accordion::after {
+  content: '';
+  position: absolute;
+  right: 4px;
+  top: 0.55em;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid var(--ink-soft);
+  border-bottom: 2px solid var(--ink-soft);
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+button.accordion.active::after {
+  transform: rotate(-135deg);
+}
+
+.panel {
+  padding: 0;
+  width: 100%;
+  max-width: var(--page-width);
+  margin: 0 auto;
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+/* ===== Intro ===== */
+.person-name {
+  margin: 0 0 12px 0;
+  padding: 0;
+  color: var(--heading);
+  font-family: var(--display-font);
+  font-weight: 700;
+  font-size: 2.6em;
+  line-height: 1.1;
+}
+
+.intro-main {
+  width: 68%;
+  padding: 14px 3% 0 0;
+  vertical-align: top;
+}
+
+.intro-aside {
+  width: 32%;
+  padding: 0;
+  vertical-align: top;
+}
+
+.person-img {
+  width: 100%;
+  max-width: 195px;
+  display: block;
+  border-radius: 6px;
+}
+
+/* ===== Contact block under the photo ===== */
+.contact {
+  margin-top: 14px;
+  font-size: 1.05em;
+  line-height: 1.5;
+}
+
+/* Name, role and affiliation read as one block in the body face. */
+.contact-name,
+.contact-role,
+.contact-affil {
+  color: var(--ink);
+}
+
+.contact-affil {
+  margin-bottom: 0;
+}
+
+.affiliation-logo {
+  height: 1.3em;
+  width: auto;
+  vertical-align: -0.32em;
+  margin-right: 4px;
+}
+
+/* Links run as one horizontal row under the introduction, wrapping only if
+   the column cannot hold them. */
+.contact-inline {
+  list-style: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 26px;
+}
+
+.contact-inline li {
+  font-size: 1.02em;
+  white-space: nowrap;
+}
+
+/* Icons pick up the blue accent, as in the reference. */
+.contact-inline i {
+  color: var(--blue);
+  margin-right: 6px;
 }
 
 /* ===== Navigation bar ===== */
 .navbar {
-  background-color: #f9f9f9;
-  border-bottom: 1px solid #e2e2e2;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--rule);
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .navbar-nav .nav-link {
-  color: #444;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 15px;
+  color: var(--heading);
+  font-family: var(--display-font);
+  font-weight: 700;
+  font-size: 1.1em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 10px 0 4px 0;
+  border-bottom: 2px solid var(--orange);
+  transition: border-bottom-width 0.2s ease, color 0.2s ease;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 34px;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus {
-  color: #f09228;
+  color: var(--blue);
+  border-bottom-width: 5px;
+  padding-bottom: 1px;
 }
 
 /* Two-line toggler that folds into an X when the menu is open. */
@@ -137,7 +278,7 @@
   left: 0;
   height: 2px;
   width: 22px;
-  background-color: #444;
+  background-color: var(--orange);
   transition: all 0.3s ease;
 }
 
@@ -150,7 +291,7 @@
 }
 
 .navbar-toggler:hover .line {
-  background-color: #f09228;
+  background-color: var(--blue);
 }
 
 .navbar-toggler:not(.collapsed) .line:nth-child(1) {
@@ -169,83 +310,35 @@
   }
 }
 
-a {
-  color: #1772d0;
-  text-decoration: none;
+/* On a stacked navbar the per-item rules would read as one long bar. */
+@media (max-width: 575px) {
+  .navbar-nav .nav-link {
+    display: inline-block;
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 0;
+  }
 }
 
-a:focus,
-a:hover {
-  color: #f09228;
-  text-decoration: none;
+/* ===== Publications =====
+   Co-author names sit in body colour so each author line reads as one string;
+   only the paper title and the resource links stay blue. */
+.publication p a:not(.pub-link) {
+  color: var(--ink);
 }
 
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+.publication {
+  margin-bottom: 18px;
 }
 
-strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-}
-
-h2 {
-  margin: 0;
-  font-weight: normal;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
-}
-
-.papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.name {
-  padding-top: 20px;
-  margin: 0;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
-}
-
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
-
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-span.highlight {
-  background-color: #ffffd0;
-}
-
+/* ===== News ===== */
 .news-scroll {
   max-height: 250px;
-  overflow-y: scroll;
+  overflow-y: auto;
   padding-right: 10px;
   scrollbar-width: thin;
-  scrollbar-color: #888 #f1f1f1;
+  scrollbar-color: #bbb #f1f1f1;
 }
 
 .news-scroll ul {
@@ -264,10 +357,46 @@ span.highlight {
 }
 
 .news-scroll::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #bbb;
   border-radius: 5px;
 }
 
 .news-scroll::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #888;
+}
+
+/* ===== Misc ===== */
+span.highlight {
+  background-color: #ffffd0;
+}
+
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+}
+
+/* Intro collapses to a single column on a phone. */
+@media (max-width: 767px) {
+  .intro-main,
+  .intro-aside {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  .intro-aside {
+    margin-top: 24px;
+  }
+
+  .person-img {
+    max-width: 280px;
+  }
 }
