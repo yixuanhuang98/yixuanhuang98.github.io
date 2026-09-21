@@ -166,19 +166,19 @@ button.accordion.active::after {
 }
 
 .intro-aside {
-  width: 285px;
+  width: 260px;
   padding: 64px 0 0 0;
   vertical-align: top;
 }
 
-/* Same width and scale as before; the fixed height trims headroom off the top
-   so the photo starts level with the name and still ends where it did. */
+/* The fixed height crops the photo; object-position splits that crop so most
+   of it still comes off the top, but a little headroom is kept above the head. */
 .person-img {
   width: 100%;
-  max-width: 100%;
-  height: 263px;
+  max-width: 225px;
+  height: 208px;
   object-fit: cover;
-  object-position: bottom;
+  object-position: 50% 75%;
   display: block;
   border-radius: 6px;
 }
@@ -419,7 +419,7 @@ span.highlight {
   }
 
   .person-img {
-    max-width: 280px;
+    max-width: 255px;
     height: auto;
   }
 }
